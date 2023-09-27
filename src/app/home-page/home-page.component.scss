@@ -1,0 +1,26 @@
+.container {
+    //background-color: red;
+    //height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left {
+    min-width: 50%;
+    //background-color: blue;
+}
+
+.right {
+    background-color: greenyellow;
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .left {
+        width: 100%;
+    }
+    
+    .right {
+        width: 100%;
+    }
+}

@@ -1,6 +1,9 @@
 import { Component, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { NgIconsModule } from '@ng-icons/core';
+import { bootstrapTwitter } from '@ng-icons/bootstrap-icons';
+import { bootstrapGithub } from '@ng-icons/bootstrap-icons';
+import { bootstrapLinkedin } from '@ng-icons/bootstrap-icons';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
@@ -14,8 +17,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ShellComponent } from './shell/shell.component';
+import { ProfileCardComponent } from './profile-card/profile-card.component';
 
-const components:any[] = [ShellComponent];
+const components:any[] = [ShellComponent, ProfileCardComponent];
 
 const modules = [
   CommonModule,
@@ -36,7 +40,7 @@ const modules = [
 
 @NgModule({
   declarations: [...components],
-  imports: [...modules],
+  imports: [...modules, NgIconsModule.withIcons({ bootstrapGithub, bootstrapLinkedin, bootstrapTwitter })],
   exports: [
     ...components,
     ...modules,
