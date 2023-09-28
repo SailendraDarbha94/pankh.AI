@@ -1,17 +1,20 @@
 import { Component } from '@angular/core';
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { Observable } from 'rxjs';
-import { map, shareReplay } from 'rxjs/operators';
+
+interface Certificate {
+  date: string;
+  heading: string;
+  logo: string;
+  uni: string;
+  cert: string;
+}
+
 @Component({
-  selector: 'app-home-page',
-  templateUrl: './home-page.component.html',
-  styleUrls: ['./home-page.component.scss']
+  selector: 'app-certificates-page',
+  templateUrl: './certificates-page.component.html',
+  styleUrls: ['./certificates-page.component.scss']
 })
-export class HomePageComponent {
-
-  description:string = "Hello there! \n My Name is Dr. Sailendra Darbha, I'm a dentist by education developer by profession, building interfaces is my passion which led me on a wild self-taught coding journey."
-
-  certs:any[] = [
+export class CertificatesPageComponent {
+  certs:Certificate[] = [
     {
       date: 'June 26, 2017',
       heading: 'Frontend Nanodegree',
@@ -55,11 +58,4 @@ export class HomePageComponent {
       cert: 'sql.png'
     },
   ]
-  isHandset$: Observable<boolean> = this.breakpointObserver.observe([Breakpoints.Handset])
-    .pipe(
-      map(result => result.matches),
-      shareReplay()
-    );
-
-  constructor(private breakpointObserver: BreakpointObserver) {}
 }

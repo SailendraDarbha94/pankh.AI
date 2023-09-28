@@ -12,11 +12,22 @@
 }
 
 .left p {
-    text-align: center;
+    padding-left: 4px;
+    padding-right: 4px;
+    text-align: justify;
+    font-size: larger;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .right {
-    background-color: greenyellow;
+    display: flex;
+    flex-wrap: wrap;
+    //overflow-x: scroll;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    //background-color: greenyellow;
     width: 50%;
 }
 

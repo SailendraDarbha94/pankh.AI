@@ -5,7 +5,7 @@
             {{ description }}
         </p>
     </div>
-    <div class="right">
-        <h2>My Work</h2>
+    <div class="right" *ngIf="!(isHandset$ | async)">
+        <app-cert-card *ngFor="let cert of certs" [certificate]="cert"></app-cert-card>
     </div>
 </div>

@@ -18,6 +18,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ShellComponent } from './shell/shell.component';
 import { ProfileCardComponent } from './profile-card/profile-card.component';
+import { CertCardComponent } from './cert-card/cert-card.component';
 
 const components:any[] = [ShellComponent, ProfileCardComponent];
 
@@ -39,11 +40,12 @@ const modules = [
 ];
 
 @NgModule({
-  declarations: [...components],
+  declarations: [...components, CertCardComponent],
   imports: [...modules, NgIconsModule.withIcons({ bootstrapGithub, bootstrapLinkedin, bootstrapTwitter })],
   exports: [
     ...components,
     ...modules,
+    CertCardComponent,
   ]
 })
 export class SharedModule {}

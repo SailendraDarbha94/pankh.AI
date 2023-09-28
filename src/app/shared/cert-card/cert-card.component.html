@@ -1,0 +1,28 @@
+<article class="card" *ngIf="certificate">
+  <header class="card-header">
+    <h2  style="text-align: center; width: 100%;" routerLink="/cert">{{ certificate.heading }}</h2>
+    <div class="certificate-holder" style="text-align: center;">
+      <img src="assets/{{ certificate.cert }}" alt="certificate" class="certificate" />
+    </div>
+  </header>
+  <p style="text-align: center; width: 100%;">{{ certificate.date }}</p>
+  <mat-divider class="divide"></mat-divider>
+  <div class="card-author">
+    <a class="author-avatar" href="#">
+      <img src="assets/{{ certificate.logo }}" />
+    </a>
+    <svg class="half-circle" viewBox="0 0 106 57">
+      <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+    </svg>
+
+    <div class="author-name" >
+      <div class="author-name-prefix">Credit</div>
+      {{ certificate.uni }}
+    </div>
+  </div>
+  <div class="tags">
+    <a href="#">html</a>
+    <a href="#">css</a>
+    <a href="#">web-dev</a>
+  </div>
+</article>
