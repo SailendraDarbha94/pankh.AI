@@ -27,7 +27,7 @@
   <mat-sidenav-content>
     <!-- TOP TOOLBAR-->
 
-    <mat-toolbar class="toolbar" color="primary">
+    <mat-toolbar class="toolbar" color="accent">
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -37,19 +37,19 @@
       >
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span class="logo" routerLink="/">🔥 Angular Firestarter</span>
+      <span class="logo" routerLink="/">Sailendra Darbha</span>
 
       <!-- <span class="fill-space"></span> -->
       <div *ngIf="!(isHandset$ | async)">
-        <a mat-button routerLink="/certificates">Certs</a>
-        <a mat-button routerLink="/customers">⚡ SSR Demo</a>
+        <a mat-button routerLink="/certificates">Certificates</a>
+        <!-- <a mat-button routerLink="/customers">⚡ SSR Demo</a>
 
-        <a mat-button routerLink="/login">🔑 Login</a>
+        <a mat-button routerLink="/login">🔑 Login</a> -->
       </div>
 
       <!-- DROPDOWN MENU -->
 
-      <button
+      <!-- <button
         mat-icon-button
         [matMenuTriggerFor]="menu"
         aria-label="Example icon-button with a menu"
@@ -62,7 +62,7 @@
           <i>💬</i>
           <span>Chat on Slack</span>
         </a>
-      </mat-menu>
+      </mat-menu> -->
     </mat-toolbar>
 
     <!-- TRANSCLUSION -->

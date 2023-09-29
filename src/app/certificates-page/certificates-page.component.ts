@@ -14,13 +14,34 @@ interface Certificate {
   styleUrls: ['./certificates-page.component.scss']
 })
 export class CertificatesPageComponent {
-  certs:Certificate[] = [
+  certs:any[] = [
+    {
+      date: 'Jan 9, 2022',
+      heading: 'Interface Design Specialization',
+      logo: 'coursera-logo.png',
+      uni: 'Coursera',
+      cert: 'spec.png'
+    },
     {
       date: 'June 26, 2017',
       heading: 'Frontend Nanodegree',
       logo: 'udacity-logo.png',
       uni: 'Udacity',
       cert: 'fe.png'
+    },
+    {
+      date: 'Mar 20, 2018',
+      heading: 'Javascript',
+      logo: 'udemy-logo.png',
+      uni: 'Udemy',
+      cert: 'js.png'
+    },
+    {
+      date: 'Jan 19, 2019',
+      heading: 'Python Data Structures',
+      logo: 'coursera-logo.png',
+      uni: 'Coursera',
+      cert: 'pds.png'
     },
     {
       date: 'June 16, 2018',
@@ -56,6 +77,27 @@ export class CertificatesPageComponent {
       logo: 'coursera-logo.png',
       uni: 'Coursera',
       cert: 'sql.png'
+    },
+    {
+      date: 'Jan 5, 2019',
+      heading: 'Intro to Python',
+      logo: 'coursera-logo.png',
+      uni: 'Coursera',
+      cert: 'pfe.png'
+    },
+    {
+      date: 'Jan 9, 2022',
+      heading: 'Project Management Fundamentals',
+      logo: 'coursera-logo.png',
+      uni: 'Coursera',
+      cert: 'pm.png'
+    },
+    {
+      date: 'Aug 18, 2018',
+      heading: 'Prototyping & Design',
+      logo: 'coursera-logo.png',
+      uni: 'Coursera',
+      cert: 'proto.png'
     },
   ]
 }
