@@ -1,0 +1,35 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout
+  title="Sailendra Darbha Portfolio Site"
+  seoTitle="Sailendra Darbha, Front End"
+  seoDesc="Software Engineer who expertise in Astro, React, NextJS and Node"
+>
+  <div class="w-8/12 md:w-6/12 mx-auto">
+    <h1
+      class="text-5xl md:text-6xl text-center drop-shadow-[0px_35px_35px_rgba(39,245,131,0.6)]"
+    >
+      Hey 👋, I am Sailendra Darbha
+    </h1>
+    <div id="typed-strings">
+      <p>I am a <b>Front-End Engineer</b></p>
+      <p>I have worked in <em>React, NextJS, & SvelteKit</em></p>
+      <p>I'm well versed in <u>HTML5, CSS3, JS & TS</u></p>
+      <p>I've also got my hands dirty on Python, SQL & PHP</p>
+    </div>
+
+    <div class="text-center mt-6"><span id="typed"></span></div>
+  </div>
+</MainLayout>
+
+<script>
+  import Typed from "typed.js";
+
+  var typed = new Typed("#typed", {
+    stringsElement: "#typed-strings",
+    typeSpeed: 50,
+    loop: true,
+  });
+</script>
