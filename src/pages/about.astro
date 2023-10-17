@@ -1,5 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from 'astro:assets';
 ---
 
 <MainLayout
@@ -8,13 +9,14 @@ import MainLayout from "../layouts/MainLayout.astro";
   seoDesc=`Hi there! My name is Sailendra Darbha, and I'm a front end engineer with over 5 years of experience in the industry`
 >
   <div class="w-10/12 md:w-6/12 mx-auto">
-    <h1 class="text-xl md:text-5xl text-center">About Me</h1>
-    <img
+    <!-- <h1 class="text-xl md:text-5xl text-center">About Me</h1> -->
+    <!-- <img
       src="/public/images/about.jpg"
       class="m-4 rounded-2xl shadow-md drop-shadow-[10px_10px_35px_rgba(39,245,131,0.6)]"
-    />
-    <p>
-      Hi there! My name is Sailendra Darbha, and I'm a software engineer with a
+    /> -->
+    <img class="m-4 rounded-full shadow-md drop-shadow-[10px_10px_35px_rgba(39,245,131,0.6)]" src="/public/profile.png" alt="Profile" />
+    <p class="text-large">
+      Hello there! My name is <span class="md:mx-3 md:px-2 md:text-3xl underline">Sailendra Darbha</span>, and I'm a software engineer with a
       little over 2 years of experience in the industry. I'm passionate about
       designing User Interfaces that feel intuitively natural and for bringing
       them to life in a way that solves real-world problems and makes people's
