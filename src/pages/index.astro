@@ -13,14 +13,14 @@ import MainLayout from "../layouts/MainLayout.astro";
     >
       Hey 👋, I am Sailendra Darbha
     </h1>
-    <div id="typed-strings">
-      <p>I am a <b>Front-End Engineer</b></p>
+    <div class="text-center" id="content">
+      <!-- <p>I am a <b>Front-End Engineer</b></p>
       <p>I have work xp in <em>React, NextJS, & SvelteKit</em></p>
       <p>I'm well versed in <u>HTML5, CSS3, JS & TS</u></p>
       <p>
         I've also got my hands dirty on <span class="line-through"
           >Python, SQL & PHP</span>
-      </p>
+      </p> -->
     </div>
 
     <div class="text-center mt-6"><span id="typed"></span></div>
@@ -28,11 +28,25 @@ import MainLayout from "../layouts/MainLayout.astro";
 </MainLayout>
 
 <script>
-  import Typed from "typed.js";
+  import Typewriter from 'typewriter-effect/dist/core';
+  var app = document.getElementById('content');
 
-  var typed = new Typed("#typed", {
-    stringsElement: "#typed-strings",
-    typeSpeed: 50,
-    loop: true,
-  });
+var typewriter = new Typewriter(app, {
+  loop: true,
+  delay: 40,
+});
+
+typewriter
+  .pauseFor(500)
+  .typeString('I am a Front-End Engineer')
+  .pauseFor(600)
+  .deleteChars(23)
+  .typeString(' have work xp in <em>React, NextJS, and SvelteKit</em>')
+  .pauseFor(600)
+  .deleteChars(44)
+  .typeString(' am well versed in <u>HTML5, CSS3, JS and TS</u>')
+  .deleteChars(43)
+  .pauseFor(600)
+  .typeString(" have also got my hands dirty on <span class='line-through'>Python, SQL and PHP</span>")
+  .start();
 </script>
