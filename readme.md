@@ -1,1 +1,1 @@
-i habe to buck up 
+i have to buck up or buckle up
