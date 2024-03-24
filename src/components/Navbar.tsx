@@ -16,10 +16,10 @@ export default function Navbar({ className }: { className?: string }) {
         </Link>
         <MenuItem setActive={setActive} active={active} item="Services">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/web-dev">Web Development</HoveredLink>
-            <HoveredLink href="/interface-design">Interface Design</HoveredLink>
-            <HoveredLink href="/seo">Train Custom Models</HoveredLink>
-            <HoveredLink href="/branding">Branding</HoveredLink>
+            <HoveredLink href="/services/web-dev">Web Development</HoveredLink>
+            <HoveredLink href="/services/interface-design">Interface Design</HoveredLink>
+            <HoveredLink href="/services/custom-models">Train Custom Models</HoveredLink>
+            {/* <HoveredLink href="/branding">Branding</HoveredLink> */}
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Products">
