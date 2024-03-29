@@ -3,7 +3,6 @@ import { TextGenerateEffect } from "@/components/misc/TextGenerateEffect";
 import { faqs } from "../texts";
 import { useState } from "react";
 import "../../globals.css";
-import SimpleForm from "@/components/misc/SimpleForm";
 
 const FaqItem = ({ faq }: { faq: any }) => {
   const [isOpen, setIsOpen] = useState(false);

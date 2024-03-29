@@ -1,6 +1,6 @@
 import { TextGenerateEffect } from "@/components/misc/TextGenerateEffect";
 import { firstParagraphs, secondParagraphs } from "./texts";
-
+import "../globals.css"
 const Page = () => {
   const introHeader: string =
     "Welcome to Pankh.AI where we value our integrity and the customer more than money";
@@ -13,7 +13,7 @@ const Page = () => {
       {firstParagraphs.map((para: any) => {
         return (
           <div key={para.id} className="my-4">
-            <p className="font-light text-lg text-justify px-8 md:px-24">
+            <p className="font-light text-lg text-justify px-8 md:px-24 text-content">
               {para.paragraph}
             </p>
           </div>
@@ -25,7 +25,7 @@ const Page = () => {
       {secondParagraphs.map((para: any) => {
         return (
           <div key={para.id} className="my-4">
-            <p className="font-light text-lg text-justify px-8 md:px-24">
+            <p className="font-light text-lg text-justify px-8 md:px-24 text-content">
               {para.paragraph}
             </p>
           </div>
