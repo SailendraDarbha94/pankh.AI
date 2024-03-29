@@ -1,13 +1,13 @@
 export const products = [
   {
     title: "Moonbeam",
-    link: "https://amplifydentistry.com/",
-    thumbnail: "/ampdent.png",
+    link: "#",
+    thumbnail: "/seamless.png",
   },
   {
     title: "Cursor",
-    link: "https://amplifydentistry.com/",
-    thumbnail: "/ayuryoj.png",
+    link: "#",
+    thumbnail: "/models.png",
   },
   {
     title: "Rogue",
@@ -23,12 +23,12 @@ export const products = [
   {
     title: "Editrix AI",
     link: "https://amplifydentistry.com/",
-    thumbnail: "/ampdent.png",
+    thumbnail: "/interfaces.png",
   },
   {
     title: "Pixel Perfect",
     link: "https://amplifydentistry.com/",
-    thumbnail: "/ayuryoj.png",
+    thumbnail: "/security.png",
   },
 
   {
@@ -123,16 +123,19 @@ export const IntroText: string =
 
 export const CardsText: any[] = [
   {
+    image: "/security.png",
     heading: "Data Privacy and Unparalled Security",
     content:
       "Our service prioritizes the confidentiality and security of your proprietary data. With robust encryption protocols and strict access controls, you can trust that your sensitive information remains protected throughout the training and deployment process. We adhere to industry best practices and compliance standards to ensure peace of mind for your organization.",
   },
   {
+    image: "/models.png",
     heading: "Customizable Model Architecture",
     content:
       "Tailor your machine learning models precisely to your business needs with our intuitive interface. From selecting algorithms to fine-tuning hyperparameters, our platform empowers users to design custom architectures that optimize performance and accuracy. Our service provides the flexibility to experiment and iterate until you achieve the desired outcomes.",
   },
   {
+    image: "/seamless.png",
     heading: "Seamless Deployment and Integration",
     content:
       "Once your custom models are trained, deploying them into production environments is effortless with our seamless integration capabilities. Our service supports various deployment options, including cloud-based hosting, on-premises deployment, and containerization, ensuring compatibility with your existing infrastructure. Our platform facilitates smooth deployment and integration, minimizing downtime and maximizing impact.",

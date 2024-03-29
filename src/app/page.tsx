@@ -12,7 +12,7 @@ export default function Home() {
     <main className="min-h-screen w-full py-28 px-4 md:px-20">
       <div className="p-4 text-center">
         <HeroParallax products={products} />
-        <div className="p-2 mb-4 mt-20 text-lg text-justify">
+        <div className="p-2 mb-4 mt-20 text-lg text-justify text-content">
           {IntroText}
         </div>
         {/* <Card>
