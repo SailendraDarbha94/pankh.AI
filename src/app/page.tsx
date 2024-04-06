@@ -5,9 +5,9 @@ import { HeroParallax } from "@/components/ui/hero-parallax";
 import { IntroText, products, projects } from "@/utils/constants";
 import { Card, CardTitle } from "@/components/ui/small-card";
 import HomePageBottom from "@/components/misc/HomePageBottom";
+import { GlobeDemo } from "@/components/GlobeDemo";
 
 export default function Home() {
-
   return (
     <main className="min-h-screen w-full py-28 px-4 md:px-20">
       <div className="p-4 text-center">
@@ -22,9 +22,13 @@ export default function Home() {
         </Card> */}
         <Meteors number={20} />
       </div>
+
+      <hr className="bg-indigo-900 my-10 p-1 rounded-md" />
       <div className="flex w-full justify-evenly gap-2 flex-col md:flex-row">
         <HomePageBottom />
       </div>
+      <hr className="bg-indigo-900 my-10 p-1 rounded-md" />
+      <GlobeDemo />
     </main>
   );
 }
