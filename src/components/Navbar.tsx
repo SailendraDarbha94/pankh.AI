@@ -16,7 +16,7 @@ export default function Navbar({ className }: { className?: string }) {
         </Link>
         <MenuItem setActive={setActive} active={active} item="Services">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/services/web-dev">Web Development</HoveredLink>
+            <HoveredLink href="/services/web-development">Web Development</HoveredLink>
             <HoveredLink href="/services/interface-design">Interface Design</HoveredLink>
             <HoveredLink href="/services/custom-models">Train Custom Models</HoveredLink>
             {/* <HoveredLink href="/branding">Branding</HoveredLink> */}
@@ -32,7 +32,8 @@ export default function Navbar({ className }: { className?: string }) {
             />
             <ProductItem
               title="AmpDent"
-              href="https://amplifydentistry.com/"
+              // href="https://amplifydentistry.com/"
+              href="/services/web-dev"
               src="/ampdent.png"
               description="An AI powered platform for helping dental students learn"
             />
