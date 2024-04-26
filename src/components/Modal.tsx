@@ -6,7 +6,7 @@ import {
   ModalBody,
   Button,
   useDisclosure,
-  Input,
+
 } from "@nextui-org/react";
 import { FaPlusCircle } from "react-icons/fa";
 import { IoSettings } from "react-icons/io5";
@@ -29,12 +29,12 @@ export default function ModalScreen() {
     event.preventDefault();
     console.log(formData);
     alert("Created Successfully");
-  
   };
+  
 
   return (
     <>
-      <div className="h-screen w-[15rem] flex flex-col justify-between p-5">
+      <div className="h-screen md:w-[15rem] flex flex-col justify-between p-5 border-2 border-black bg-slate-200">
         <Button
           onPress={onOpen}
           color="primary"
@@ -53,32 +53,33 @@ export default function ModalScreen() {
         isOpen={isOpen}
         onClose={onClose}
         placement="top-center"
-        size="3xl"
-        className="bg-white border-2 h-[60%]"
+        size="full"
+        className="bg-gray-100 border-2 border-black "
       >
         <ModalContent>
-          <ModalHeader className="flex flex-col gap-1">
+          <ModalHeader className="flex flex-col gap-1 font-serif text-2xl">
             Creating Sample Container
           </ModalHeader>
           <ModalBody>
             <form onSubmit={submitHandler}>
-              <div className="m-2">
-                <label className="text-sm mb-2 block">Name of the Model</label>
+              <div className="mt-2 mb-4" >
+                <label className="text-lg mb-2 block">Name of the Model</label>
                 <div className="relative flex items-center">
-                  <Input
+                  <input
                     name="modelName"
                     type="text"
                     required
                     value={formData.modelName}
                     onChange={changeHandler}
                     placeholder="Enter Model Name"
-                    className = "border-2"
+                    className="w-full py-2 px-2 border-2 bg-gray-100 border-black rounded-md"
+
                   />
                 </div>
               </div>
 
               <div>
-                <label className="text-sm mb-2 block">
+                <label className="text-lg mb-2 block">
                   Type of the Model
                 </label>
                 <div className="relative flex items-center">
@@ -87,7 +88,7 @@ export default function ModalScreen() {
                     required
                     value={formData.modelType}
                     onChange={changeHandler}
-                    className="w-full text-sm border border-gray-300 px-4 py-3 rounded-md outline-[#333]"
+                    className="w-full text-lg border bg-gray-100 border-black px-4 py-3 rounded-md"
                   >
                     <option value="ChatGpt 3.5">ChatGpt 3.5</option>
                     <option value="ChatGpt Turbo 4">ChatGpt Turbo 4</option>
@@ -97,13 +98,12 @@ export default function ModalScreen() {
               </div>
               <button
                 type="submit"
-                className="mt-10 h-14 w-24 border-2 rounded-md"
+                className="border-black mt-10 h-8 w-24 border rounded-md transition-all duration-300 ease-in-out hover:bg-gray-200"
               >
                 Create
               </button>
             </form>
           </ModalBody>
-          
         </ModalContent>
       </Modal>
     </>
