@@ -1,20 +1,20 @@
-import { useRouter } from 'next/navigation';
-import type { Metadata } from 'next';
-import { Roboto, Inter } from 'next/font/google';
-import './globals.css';
-import Navbar from '@/components/Navbar';
+import { useRouter } from "next/navigation";
+import type { Metadata } from "next";
+import { Roboto, Inter } from "next/font/google";
+import "./globals.css";
+import Client from "./Client";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 const roboto = Roboto({
-  weight: ['400', '700'],
-  style: ['normal', 'italic'],
-  subsets: ['latin'],
-  display: 'swap',
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: 'Pankh.AI',
-  description: 'A platform for private llm models trained on your custom data',
+  title: "Pankh.AI",
+  description: "A platform for private llm models trained on your custom data",
 };
 
 export default function RootLayout({
@@ -22,16 +22,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const router = useRouter();
-
-
-  const hideNavbar = router.pathname.startsWith('/dashboard/default') || router.pathname.startsWith('/dashboard/admin');
-
   return (
     <html lang="en">
       <body className={roboto.className}>
-        {!hideNavbar && <Navbar className="dark hidden md:block" />}
-        <div className="">{children}</div>
+        <Client>
+          <div className="">{children}</div>
+        </Client>
       </body>
     </html>
   );
