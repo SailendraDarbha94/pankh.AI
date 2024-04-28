@@ -89,7 +89,7 @@ export const ProductItem = ({
   src: string;
 }) => {
   return (
-    <Link href={href} className="flex space-x-2">
+    <Link href={href} className="flex flex-col space-y-2 hover:bg-gray-100 hover:text-blck rounded-xl px-2">
       <Image
         src={src}
         width={140}
