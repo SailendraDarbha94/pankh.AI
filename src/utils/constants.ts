@@ -1,3 +1,10 @@
+import { BsClipboardData } from "react-icons/bs";
+import { GrStorage } from "react-icons/gr";
+import { MdOutlineSecurity } from "react-icons/md";
+import { PiTreeStructureBold } from "react-icons/pi";
+import { MdTune } from "react-icons/md";
+
+
 export const products = [
   {
     title: "Moonbeam",
@@ -179,4 +186,40 @@ export const web_dev_clients: any[] = [
     designation: "The Explorer",
     image: "/vegeta.jpeg",
   },
+];
+
+
+
+export const cardsData = [
+  {
+    id: 1,
+    title: "Lower Storage Space",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    Icon: GrStorage 
+  },
+  {
+    id: 2,
+    title: "Data Agnostic",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    Icon: BsClipboardData
+  },
+  {
+    id: 3,
+    title: "Security & Privacy",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    Icon: MdOutlineSecurity
+  },
+  {
+    id: 4,
+    title: "Multi Model Support",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    Icon: PiTreeStructureBold 
+  },
+  {
+    id: 5,
+    title: "Efficient Fine-Tuning",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    Icon: MdTune
+  },
+
 ];

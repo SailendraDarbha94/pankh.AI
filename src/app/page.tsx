@@ -1,14 +1,17 @@
 "use client"
 import "./globals.css";
 import { Spacer } from "@nextui-org/react";
-import bg from "../../public/background.jpg"
 import img1 from '../../public/AiModels.png'
 import img2 from '../../public/Neural-Network-versus-Deep-Learning.png'
 import { Meteors } from "@/components/ui/meteors";
 import HighlightText from "@/components/HighlightText";
+import { cardsData } from "@/utils/constants";
+import Cards from "@/components/Cards";
+
 const Page = () => {
   return (
-    <main className="min-h-screen py-32 px-4 md:px-20 max-w-screen-sm md:max-w-screen-2xl mx-auto " style={{ backgroundImage: `url(${bg.src})`, backgroundSize: "cover",  }}>
+    <main className="min-h-screen py-32 px-4 md:px-20 max-w-screen-sm md:max-w-screen-2xl mx-auto bg-gradient-to-b from-cyan-200 via-blue-400 to-purple-400 " >
+      {/* style={{ backgroundImage: `url(${bg.src})`, backgroundSize: "cover",  }} */}
       <Spacer y={5} />
       <section className="w-full">
         <h1 className="text-3xl text-gray-800  font-semibold font-serif underline">
@@ -61,7 +64,15 @@ const Page = () => {
       </section>
 
       
-      
+    <div className="flex gap-5 flex-wrap">
+        
+    {cardsData.map((card:any, index:any) => (
+          <div key={`content-${index}`} className="mt-8 m-auto shadow-lg border-2 border-black rounded-xl shadow-black hover:cursor-pointer hover:shadow-gray-200 hover:scale-105 transition-all ease-in-out" >
+            <Cards key={card.index} title={card.title} Icon={card.Icon} description={card.description} />
+          </div>
+        ))}
+        
+    </div>
 
 
 

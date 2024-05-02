@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const { addDynamicIconSelectors } = require('@iconify/tailwind');
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
@@ -28,7 +29,9 @@ const config: Config = {
       },
     },
   },
-  plugins: [addVariablesForColors],
+  plugins: [addVariablesForColors,
+  addDynamicIconSelectors(),
+  ],
 };
 
 function addVariablesForColors({ addBase, theme }: any) {
