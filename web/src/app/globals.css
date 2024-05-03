@@ -2,9 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Raleway";
+  src: url("../../public/fonts/Raleway/Raleway-VariableFont_wght.ttf");
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-rgb: 111, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
 
