@@ -235,13 +235,13 @@ export default function Home() {
                         clip-rule="evenodd"
                       ></path>
                     </svg>
-                    What do you mean by &quot;Figma assets&quot;?
+                    What do you mean by &quot;AI Models&quot;?
                   </h3>
                   <p className="text-gray-500 dark:text-gray-400">
-                    You will have access to download the full Figma project
-                    including all of the pages, the components, responsive
-                    pages, and also the icons, illustrations, and images
-                    included in the screens.
+                  AI models are algorithms designed to replicate human-like intelligence, 
+                  enabling them to perform tasks such as pattern recognition, prediction, 
+                  and decision-making. These models are built using mathematical constructs 
+                  and are trained on vast datasets to learn patterns and relationships within the data.
                   </p>
                 </div>
                 <div className="mb-10">
@@ -258,12 +258,14 @@ export default function Home() {
                         clip-rule="evenodd"
                       ></path>
                     </svg>
-                    What does &quot;lifetime access&quot; exactly mean?
+                    How are AI models are " trained " ?
                   </h3>
                   <p className="text-gray-500 dark:text-gray-400">
-                    Once you have purchased either the design, code, or both
-                    packages, you will have access to all of the future updates
-                    based on the roadmap, free of charge.
+                  AI models are trained through a process called machine learning,
+                   where they are fed with large amounts of data and learn to make predictions 
+                   or decisions based on that data. During training, the model's parameters are 
+                   adjusted iteratively to minimize the difference between its predictions and 
+                   the actual outcomes in the training data.
                   </p>
                 </div>
                 <div className="mb-10">
@@ -280,15 +282,16 @@ export default function Home() {
                         clip-rule="evenodd"
                       ></path>
                     </svg>
-                    How does support work?
+                    What is the role of data in training AI models?
                   </h3>
                   <p className="text-gray-500 dark:text-gray-400">
-                    We&amps;re aware of the importance of well qualified
-                    support, that is why we decided that support will only be
-                    provided by the authors that actually worked on this
-                    project.
+                  Data plays a pivotal role in training AI models, as the quality, quantity, 
+                  and diversity of data directly impact the model's performance. 
+                  High-quality and diverse datasets help the model learn robust patterns and generalize well to unseen data.
+                   Data preprocessing, including cleaning and normalization, is often necessary
+                    to prepare the data for effective training.
                   </p>
-                  <p className="text-gray-500 dark:text-gray-400">
+                  {/* <p className="text-gray-500 dark:text-gray-400">
                     Feel free to{" "}
                     <a
                       href="#"
@@ -299,7 +302,7 @@ export default function Home() {
                       contact us
                     </a>{" "}
                     and we&amps;ll help you out as soon as we can.
-                  </p>
+                  </p> */}
                 </div>
                 <div className="mb-10">
                   <h3 className="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
@@ -315,16 +318,15 @@ export default function Home() {
                         clip-rule="evenodd"
                       ></path>
                     </svg>
-                    I want to build more than one project. Is that allowed?
+                    What are some common types of AI models?
                   </h3>
                   <p className="text-gray-500 dark:text-gray-400">
-                    You can use Windster for an unlimited amount of projects,
-                    whether it&amps;s a personal website, a SaaS app, or a
-                    website for a client. As long as you don&amps;t build a
-                    product that will directly compete with Windster either as a
-                    UI kit, theme, or template, it&amps;s fine.
+                  Common types of AI models include supervised learning models 
+                  (e.g., neural networks, decision trees), unsupervised learning models 
+                  (e.g., clustering algorithms, autoencoders), reinforcement learning models 
+                  (e.g., deep Q-networks, policy gradients), and generative models (e.g., GANs, VAEs).
                   </p>
-                  <p className="text-gray-500 dark:text-gray-400">
+                  {/* <p className="text-gray-500 dark:text-gray-400">
                     Find out more information by{" "}
                     <a
                       href="#"
@@ -333,7 +335,7 @@ export default function Home() {
                       reading the license
                     </a>
                     .
-                  </p>
+                  </p> */}
                 </div>
               </div>
               <div>
@@ -351,19 +353,14 @@ export default function Home() {
                         clip-rule="evenodd"
                       ></path>
                     </svg>
-                    What does &quot;free updates&quot; include?
+                    How long does it take to train an AI model?
                   </h3>
                   <p className="text-gray-500 dark:text-gray-400">
-                    The free updates that will be provided is based on the{" "}
-                    <a
-                      href="#"
-                      className="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline"
-                    >
-                      roadmap
-                    </a>{" "}
-                    that we have laid out for this project. It is also possible
-                    that we will provide extra updates outside of the roadmap as
-                    well.
+                  The training time for an AI model varies depending on factors such 
+                  as the complexity of the model, the size of the dataset, 
+                  the computational resources available, and the desired level of accuracy. 
+                  Training simpler models on small datasets may take hours or days, 
+                  while training complex models on large datasets could take weeks or even months.
                   </p>
                 </div>
                 <div className="mb-10">
@@ -380,23 +377,13 @@ export default function Home() {
                         clip-rule="evenodd"
                       ></path>
                     </svg>
-                    What does the free version include?
+                    What hardware is commonly used for training AI models?
                   </h3>
                   <p className="text-gray-500 dark:text-gray-400">
-                    The{" "}
-                    <a
-                      href="#"
-                      className="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline"
-                    >
-                      free version
-                    </a>{" "}
-                    of Windster includes a minimal style guidelines, component
-                    variants, and a dashboard page with the mobile version
-                    alongside it.
-                  </p>
-                  <p className="text-gray-500 dark:text-gray-400">
-                    You can use this version for any purposes, because it is
-                    open-source under the MIT license.
+                  Commonly used hardware for training AI models includes CPUs, 
+                  GPUs (Graphics Processing Units), and TPUs (Tensor Processing Units). 
+                  High-performance computing (HPC) clusters and cloud-based services 
+                  also provide scalable resources for training large models.
                   </p>
                 </div>
                 <div className="mb-10">
@@ -413,18 +400,13 @@ export default function Home() {
                         clip-rule="evenodd"
                       ></path>
                     </svg>
-                    What is the difference between Windster and Tailwind UI?
+                    How do you evaluate the performance of an AI model?
                   </h3>
                   <p className="text-gray-500 dark:text-gray-400">
-                    Although both Windster and Tailwind UI are built for
-                    integration with Tailwind CSS, the main difference is in the
-                    design, the pages, the extra components and UI elements that
-                    Windster includes.
-                  </p>
-                  <p className="text-gray-500 dark:text-gray-400">
-                    Additionally, Windster is a project that is still in
-                    development, and later it will include both the application,
-                    marketing, and e-commerce UI interfaces.
+                  The performance of an AI model is evaluated using various metrics depending on the task,
+                   such as accuracy, precision, recall, F1 score for classification tasks, mean squared error (MSE), 
+                   and R-squared for regression tasks. Additionally, techniques like cross-validation 
+                   and holdout validation are used to assess the model's generalization performance on unseen data.
                   </p>
                 </div>
                 <div className="mb-10">
@@ -441,27 +423,15 @@ export default function Home() {
                         clip-rule="evenodd"
                       ></path>
                     </svg>
-                    Can I use Windster in open-source projects?
+                    What are some best practices for training AI models?
                   </h3>
                   <p className="text-gray-500 dark:text-gray-400">
-                    Generally, it is accepted to use Windster in open-source
-                    projects, as long as it is not a UI library, a theme, a
-                    template, a page-builder that would be considered as an
-                    alternative to Windster itself.
-                  </p>
-                  <p className="text-gray-500 dark:text-gray-400">
-                    With that being said, feel free to use this design kit for
-                    your open-source projects.
-                  </p>
-                  <p className="text-gray-500 dark:text-gray-400">
-                    Find out more information by{" "}
-                    <a
-                      href="#"
-                      className="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline"
-                    >
-                      reading the license
-                    </a>
-                    .
+                  Best practices for training AI models include ensuring high-quality and 
+                  representative training data, regularizing the model to prevent overfitting, 
+                  tuning hyperparameters carefully through experimentation, monitoring and 
+                  debugging the training process to identify issues early, 
+                  and leveraging transfer learning and pre-trained models where applicable to speed up 
+                  training and improve performance.
                   </p>
                 </div>
               </div>
@@ -538,12 +508,12 @@ export default function Home() {
                   </h2>
                   <ul className="text-gray-600 dark:text-gray-400">
                     <li className="mb-4">
-                      <a href="#" className="hover:underline">
+                      <a href="/legal/privacy" className="hover:underline">
                         Privacy Policy
                       </a>
                     </li>
                     <li>
-                      <a href="#" className="hover:underline">
+                      <a href="/legal/terms" className="hover:underline">
                         Terms &amp; Conditions
                       </a>
                     </li>
